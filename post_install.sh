@@ -35,6 +35,7 @@ fi
 # Temporary hacks, as workaround for building node-userid
 pkg remove -y node npm
 pkg install -y node14 npm-node14
+npm i -g npm@7
 echo "Checking node / npm versions"
 node --version
 npm --version
