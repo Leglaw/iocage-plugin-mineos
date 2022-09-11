@@ -33,8 +33,8 @@ if [ ! -f "/etc/mineos.conf" ] ; then
 fi
 
 # Temporary hacks, as workaround for building node-userid
-# pkg remove -y node npm
-# pkg install -y node14 npm-node14
+pkg remove -y node npm
+pkg install -y node14 npm-node14
 echo "Checking node / npm versions"
 node --version
 npm --version
